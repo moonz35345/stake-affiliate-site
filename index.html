@@ -41,8 +41,126 @@
 
   <title>Stake Casino Review 2026 — Honest Review, Bonus & Games Guide</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Sticky CTA Bar */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(10, 14, 23, 0.98);
+      border-top: 2px solid var(--accent);
+      padding: 0.8rem 2rem;
+      z-index: 999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .sticky-cta.show {
+      display: flex;
+    }
+    .sticky-cta-text {
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .sticky-cta .btn-primary {
+      padding: 0.7rem 2rem;
+      font-size: 1rem;
+    }
+    @media (max-width: 600px) {
+      .sticky-cta { flex-direction: column; padding: 0.6rem 1rem; gap: 0.5rem; }
+      .sticky-cta-text { font-size: 0.85rem; }
+    }
+
+    /* Exit Intent Popup */
+    .exit-popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 10000;
+      justify-content: center;
+      align-items: center;
+    }
+    .exit-popup-overlay.show {
+      display: flex;
+    }
+    .exit-popup {
+      background: var(--bg-card);
+      border: 2px solid var(--accent);
+      border-radius: 20px;
+      padding: 3rem;
+      max-width: 500px;
+      text-align: center;
+      position: relative;
+      animation: popupIn 0.3s ease;
+    }
+    @keyframes popupIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .exit-popup-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    .exit-popup-close:hover {
+      color: var(--text-primary);
+    }
+    .exit-popup h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+    .exit-popup p {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+    }
+    .exit-popup .bonus-highlight {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 1.3rem;
+    }
+    .exit-popup .btn-primary {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .exit-popup .no-thanks {
+      display: block;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .exit-popup .no-thanks:hover {
+      color: var(--text-secondary);
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Sticky CTA Bar -->
+  <div class="sticky-cta" id="stickyCta">
+    <span class="sticky-cta-text">🎁 Ready to play at Stake Casino? Claim your bonus now!</span>
+    <a href="https://stake.bet/?c=Playgood" class="btn-primary" rel="nofollow noopener" target="_blank">🎰 Play Now</a>
+  </div>
+
+  <!-- Exit Intent Popup -->
+  <div class="exit-popup-overlay" id="exitPopup">
+    <div class="exit-popup">
+      <span class="exit-popup-close" id="exitPopupClose">&times;</span>
+      <h3>🎁 Wait! Don't Leave Yet!</h3>
+      <p>Get up to <span class="bonus-highlight">$1,000+</span> in bonus when you sign up at Stake Casino through our exclusive link.</p>
+      <a href="https://stake.bet/?c=Playgood" class="btn-primary" rel="nofollow noopener" target="_blank" style="font-size: 1.2rem; padding: 1rem 2.5rem;">🎰 Claim My Bonus Now</a>
+      <span class="no-thanks" id="exitPopupNoThanks">No thanks, I'll pass</span>
+    </div>
+  </div>
 
   <!-- Navigation -->
   <nav class="navbar">

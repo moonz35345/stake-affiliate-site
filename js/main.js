@@ -71,6 +71,68 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.feature-card, .game-card, .review-card, .payment-method, .faq-item').forEach(el => {
     el.classList.add('fade-in');
   });
+
+  // Sticky CTA Bar — show after scrolling 500px
+  const stickyCta = document.getElementById('stickyCta');
+  if (stickyCta) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 500) {
+        stickyCta.classList.add('show');
+      } else {
+        stickyCta.classList.remove('show');
+      }
+    });
+  }
+
+  // Exit Intent Popup — show when mouse leaves window (desktop)
+  const exitPopup = document.getElementById('exitPopup');
+  const exitPopupClose = document.getElementById('exitPopupClose');
+  const exitPopupNoThanks = document.getElementById('exitPopupNoThanks');
+  let exitPopupShown = false;
+
+  function showExitPopup() {
+    if (exitPopup && !exitPopupShown) {
+      exitPopup.classList.add('show');
+      exitPopupShown = true;
+    }
+  }
+
+  function closeExitPopup() {
+    if (exitPopup) {
+      exitPopup.classList.remove('show');
+    }
+  }
+
+  // Desktop — mouse leaves viewport
+  document.addEventListener('mouseleave', function(e) {
+    if (e.clientY < 10 && !exitPopupShown) {
+      showExitPopup();
+    }
+  });
+
+  // Mobile — show after 30 seconds or scroll to bottom
+  setTimeout(function() {
+    if (!exitPopupShown) {
+      showExitPopup();
+    }
+  }, 30000);
+
+  // Close popup
+  if (exitPopupClose) {
+    exitPopupClose.addEventListener('click', closeExitPopup);
+  }
+  if (exitPopupNoThanks) {
+    exitPopupNoThanks.addEventListener('click', closeExitPopup);
+  }
+
+  // Close on overlay click
+  if (exitPopup) {
+    exitPopup.addEventListener('click', function(e) {
+      if (e.target === exitPopup) {
+        closeExitPopup();
+      }
+    });
+  }
 });
 
 // Affiliate link tracking helper
