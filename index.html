@@ -9,70 +9,64 @@
   <meta name="author" content="Stake Casino Review">
   <meta name="google-site-verification" content="9FZlH77Bxfzix8lXJMJ0wg4oNjpX4nlr_022USJTPMk">
   <link rel="canonical" href="https://stake.bet/?c=Playgood">
-
-  <!-- Open Graph -->
   <meta property="og:title" content="Stake Casino Review 2026 — Honest Review + Exclusive Bonus">
   <meta property="og:description" content="Complete Stake Casino review. 3000+ games, instant crypto withdrawals, provably fair gaming. Claim your bonus now!">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://stake.bet/?c=Playgood">
-
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Review",
-    "itemReviewed": {
-      "@type": "Organization",
-      "name": "Stake Casino",
-      "url": "https://stake.bet/"
-    },
-    "author": {
-      "@type": "Organization",
-      "name": "Casino Review Expert"
-    },
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "4.7",
-      "bestRating": "5"
-    },
+    "itemReviewed": {"@type": "Organization", "name": "Stake Casino", "url": "https://stake.bet/"},
+    "author": {"@type": "Organization", "name": "Casino Review Expert"},
+    "reviewRating": {"@type": "Rating", "ratingValue": "4.7", "bestRating": "5"},
     "datePublished": "2026-01-01"
   }
   </script>
-
   <title>Stake Casino Review 2026 — Honest Review, Bonus & Games Guide</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
     /* Sticky CTA Bar */
     .sticky-cta {
       position: fixed;
-      bottom: 0;
+      bottom: -80px;
       left: 0;
       width: 100%;
-      background: rgba(10, 14, 23, 0.98);
-      border-top: 2px solid var(--accent);
-      padding: 0.8rem 2rem;
+      background: linear-gradient(135deg, #00e701, #00a800);
+      padding: 12px 20px;
       z-index: 999;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-    }
-    .sticky-cta.show {
       display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      transition: bottom 0.3s ease;
+      box-shadow: 0 -4px 20px rgba(0,231,1,0.3);
     }
-    .sticky-cta-text {
-      color: var(--text-primary);
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-    .sticky-cta .btn-primary {
-      padding: 0.7rem 2rem;
+    .sticky-cta.visible { bottom: 0; }
+    .sticky-cta-text { color: #000; font-weight: 700; font-size: 1rem; }
+    .sticky-cta-btn {
+      background: #000;
+      color: #00e701;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
       font-size: 1rem;
+      text-decoration: none;
     }
-    @media (max-width: 600px) {
-      .sticky-cta { flex-direction: column; padding: 0.6rem 1rem; gap: 0.5rem; }
-      .sticky-cta-text { font-size: 0.85rem; }
+    .sticky-cta-btn:hover { background: #1a1a1a; }
+    .sticky-cta-close {
+      position: absolute;
+      right: 15px;
+      background: none;
+      border: none;
+      color: #000;
+      font-size: 1.5rem;
+      cursor: pointer;
+      opacity: 0.6;
     }
+    .sticky-cta-close:hover { opacity: 1; }
 
     /* Exit Intent Popup */
     .exit-popup-overlay {
@@ -80,85 +74,232 @@
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0,0,0,0.7);
       z-index: 10000;
       justify-content: center;
       align-items: center;
     }
-    .exit-popup-overlay.show {
-      display: flex;
-    }
+    .exit-popup-overlay.active { display: flex; }
     .exit-popup {
-      background: var(--bg-card);
-      border: 2px solid var(--accent);
+      background: linear-gradient(135deg, #1a2235, #111827);
+      border: 2px solid #00e701;
       border-radius: 20px;
       padding: 3rem;
       max-width: 500px;
       text-align: center;
       position: relative;
-      animation: popupIn 0.3s ease;
+      animation: popIn 0.3s ease;
     }
-    @keyframes popupIn {
+    @keyframes popIn {
       from { transform: scale(0.8); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
     }
     .exit-popup-close {
       position: absolute;
-      top: 10px;
-      right: 15px;
-      font-size: 1.5rem;
+      top: 10px; right: 15px;
+      background: none;
+      border: none;
       color: var(--text-muted);
-      cursor: pointer;
-      transition: color 0.3s;
-    }
-    .exit-popup-close:hover {
-      color: var(--text-primary);
-    }
-    .exit-popup h3 {
       font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .exit-popup h2 {
+      font-size: 1.8rem;
       margin-bottom: 1rem;
       color: var(--text-primary);
+    }
+    .exit-popup h2 .highlight {
+      background: linear-gradient(135deg, #00e701, #00a800);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     .exit-popup p {
       color: var(--text-secondary);
       margin-bottom: 1.5rem;
     }
     .exit-popup .bonus-highlight {
-      color: var(--accent);
-      font-weight: 800;
-      font-size: 1.3rem;
+      background: rgba(0,231,1,0.1);
+      border: 1px solid rgba(0,231,1,0.3);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
     }
-    .exit-popup .btn-primary {
-      display: inline-block;
-      margin-bottom: 1rem;
+    .exit-popup .bonus-highlight .amount {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #00e701;
     }
-    .exit-popup .no-thanks {
+    .exit-popup-btn {
       display: block;
-      color: var(--text-muted);
-      font-size: 0.85rem;
+      width: 100%;
+      background: linear-gradient(135deg, #00e701, #00a800);
+      color: #000;
+      padding: 1rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      border: none;
       cursor: pointer;
     }
-    .exit-popup .no-thanks:hover {
+    .exit-popup-btn:hover { transform: translateY(-2px); }
+    .exit-popup-btn.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+    }
+    .exit-popup-timer {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 1rem;
+    }
+
+    /* Urgency Banner */
+    .urgency-banner {
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .urgency-banner .countdown {
+      display: inline-block;
+      background: rgba(0,0,0,0.2);
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-left: 5px;
+      font-family: monospace;
+    }
+
+    /* Social Proof */
+    .social-proof {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding: 1rem;
+      background: rgba(0,231,1,0.05);
+      border-radius: 10px;
+      border: 1px solid rgba(0,231,1,0.1);
+    }
+    .social-proof-avatars {
+      display: flex;
+    }
+    .social-proof-avatars span {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00e701, #00a800);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #000;
+      margin-left: -10px;
+      border: 2px solid var(--bg-primary);
+    }
+    .social-proof-avatars span:first-child { margin-left: 0; }
+    .social-proof-text {
       color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    .social-proof-text strong { color: var(--accent); }
+
+    /* Inline CTA in content */
+    .inline-cta {
+      background: linear-gradient(135deg, rgba(0,231,1,0.1), rgba(0,231,1,0.05));
+      border: 1px solid rgba(0,231,1,0.3);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .inline-cta p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .inline-cta-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #00e701, #00a800);
+      color: #000;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .inline-cta-btn:hover { color: #000; transform: translateY(-2px); }
+
+    /* Comparison CTA */
+    .comparison-cta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+    .comparison-cta-card {
+      background: var(--bg-card);
+      border: 2px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .comparison-cta-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+    .comparison-cta-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .comparison-cta-card .bonus { font-size: 1.8rem; font-weight: 900; color: var(--accent); margin-bottom: 0.5rem; }
+    .comparison-cta-card p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; }
+    .comparison-cta-btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, #00e701, #00a800);
+      color: #000;
+      padding: 0.8rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .comparison-cta { grid-template-columns: 1fr; }
+      .sticky-cta { flex-direction: column; gap: 8px; padding: 10px; }
+      .sticky-cta-text { font-size: 0.85rem; }
+      .exit-popup { margin: 1rem; padding: 2rem; }
     }
   </style>
 </head>
 <body>
 
+  <!-- Urgency Banner -->
+  <div class="urgency-banner">
+    🔥 Limited Time: Get up to $1,000+ bonus + 180% at BC.Game — Expires in <span class="countdown" id="countdown">02:34:17</span>
+  </div>
+
   <!-- Sticky CTA Bar -->
-  <div class="sticky-cta" id="stickyCta">
-    <span class="sticky-cta-text">🎁 Ready to play at Stake Casino? Claim your bonus now!</span>
-    <a href="https://stake.bet/?c=Playgood" class="btn-primary" rel="nofollow noopener" target="_blank">🎰 Play Now</a>
+  <div class="sticky-cta" id="stickyCta" style="background: linear-gradient(135deg, #00e701, #00a800); padding: 12px 50px 12px 20px; color: #000; position: fixed; bottom: -80px; left: 0; width: 100%; z-index: 999; display: flex; justify-content: center; align-items: center; gap: 15px; box-shadow: 0 -4px 20px rgba(0,231,1,0.3); font-weight: 700; font-size: 1rem; border: none; border-radius: 0; text-decoration: none; cursor: pointer; transition: bottom 0.3s ease;">
+    <span>🎰 Get up to $1,000+ at Stake Casino</span>
+    <a href="https://stake.bet/?c=Playgood" rel="nofollow noopener" target="_blank" style="background: #000; color: #00e701; padding: 10px 25px; border-radius: 8px; text-decoration: none; font-weight: 700;">Claim Bonus Now →</a>
+    <button onclick="this.parentElement.style.bottom='-80px'" style="position: absolute; right: 15px; background: none; border: none; color: #000; font-size: 1.5rem; cursor: pointer; opacity: 0.6;">×</button>
   </div>
 
   <!-- Exit Intent Popup -->
   <div class="exit-popup-overlay" id="exitPopup">
     <div class="exit-popup">
-      <span class="exit-popup-close" id="exitPopupClose">&times;</span>
-      <h3>🎁 Wait! Don't Leave Yet!</h3>
-      <p>Get up to <span class="bonus-highlight">$1,000+</span> in bonus when you sign up at Stake Casino through our exclusive link.</p>
-      <a href="https://stake.bet/?c=Playgood" class="btn-primary" rel="nofollow noopener" target="_blank" style="font-size: 1.2rem; padding: 1rem 2.5rem;">🎰 Claim My Bonus Now</a>
-      <span class="no-thanks" id="exitPopupNoThanks">No thanks, I'll pass</span>
+      <button class="exit-popup-close" onclick="closeExitPopup()">×</button>
+      <h2>Wait! Don't Miss <span class="highlight">Your Bonus</span></h2>
+      <div class="bonus-highlight">
+        <div class="amount">Up to $1,000+</div>
+        <div style="color: var(--text-secondary); font-size: 0.9rem;">Stake Casino Welcome Bonus</div>
+      </div>
+      <p>Join thousands of players at Stake Casino. Instant withdrawals, 3000+ games, and provably fair gaming.</p>
+      <a href="https://stake.bet/?c=Playgood" class="exit-popup-btn" target="_blank" rel="nofollow noopener">🎰 Claim Your Bonus Now</a>
+      <a href="bc-game-review.html" class="exit-popup-btn secondary" style="margin-top: 0.5rem;">🎁 Check BC.Game Bonus (180%)</a>
+      <p class="exit-popup-timer">⏰ This exclusive offer expires soon</p>
     </div>
   </div>
 
@@ -176,11 +317,7 @@
         <li><a href="#faq">FAQ</a></li>
         <li><a href="https://stake.bet/?c=Playgood" class="nav-cta" rel="nofollow noopener" target="_blank">Play Now →</a></li>
       </ul>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
     </div>
   </nav>
 
@@ -191,77 +328,68 @@
       <h1>Stake Casino — The <span class="highlight">#1 Crypto Casino</span> in 2026</h1>
       <p>Honest, in-depth review of Stake.bet. Discover 3000+ games, massive bonuses, instant crypto withdrawals, and provably fair gaming. Is Stake legit? We break it all down.</p>
       <div class="hero-buttons">
-        <a href="https://stake.bet/?c=Playgood" class="btn-primary" rel="nofollow noopener" target="_blank" onclick="trackAffiliateClick('hero')">
-          🎰 Claim Bonus Now
-        </a>
-        <a href="#review" class="btn-secondary">
-          Read Full Review ↓
-        </a>
+        <a href="https://stake.bet/?c=Playgood" class="btn-primary" rel="nofollow noopener" target="_blank">🎰 Claim Bonus Now</a>
+        <a href="#review" class="btn-secondary">Read Full Review ↓</a>
+      </div>
+      <div class="social-proof">
+        <div class="social-proof-avatars">
+          <span>MK</span><span>SJ</span><span>DR</span><span>JK</span><span>AB</span>
+        </div>
+        <div class="social-proof-text">
+          <strong>2,847 players</strong> signed up this week
+        </div>
       </div>
       <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-number">3,000+</div>
-          <div class="stat-label">Games</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">15+</div>
-          <div class="stat-label">Cryptos</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">&lt;10min</div>
-          <div class="stat-label">Withdrawals</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">4.7/5</div>
-          <div class="stat-label">Our Rating</div>
-        </div>
+        <div class="stat-item"><div class="stat-number">3,000+</div><div class="stat-label">Games</div></div>
+        <div class="stat-item"><div class="stat-number">15+</div><div class="stat-label">Cryptos</div></div>
+        <div class="stat-item"><div class="stat-number">&lt;10min</div><div class="stat-label">Withdrawals</div></div>
+        <div class="stat-item"><div class="stat-number">4.7/5</div><div class="stat-label">Our Rating</div></div>
       </div>
     </div>
   </section>
 
-  <!-- Quick Review Section -->
+  <!-- Quick Review -->
   <section id="review" class="section-container">
     <div class="section-header fade-in">
       <h2>Stake Casino <span class="highlight">Full Review</span></h2>
-      <p>We've spent hundreds of hours testing Stake.bet. Here's everything you need to know before you play.</p>
+      <p>We've spent hundreds of hours testing Stake.bet. Here's everything you need to know.</p>
     </div>
-
     <div class="features-grid">
       <div class="feature-card fade-in">
         <div class="feature-icon">🎮</div>
         <h3>3,000+ Games</h3>
-        <p>Massive library including slots, table games, live casino, and exclusive Stake Originals like Crash, Dice, and Mines.</p>
+        <p>Massive library including slots, table games, live casino, and exclusive Stake Originals.</p>
       </div>
       <div class="feature-card fade-in">
         <div class="feature-icon">💰</div>
         <h3>Generous Bonuses</h3>
-        <p>Welcome offers, weekly reloads, rakeback, VIP rewards, and regular promotions keep your bankroll topped up.</p>
+        <p>Welcome offers, weekly reloads, rakeback, VIP rewards, and regular promotions.</p>
       </div>
       <div class="feature-card fade-in">
         <div class="feature-icon">⚡</div>
         <h3>Instant Withdrawals</h3>
-        <p>Crypto withdrawals processed in under 10 minutes. No lengthy verification for most transactions.</p>
-      </      </div>
+        <p>Crypto withdrawals processed in under 10 minutes. No lengthy verification needed.</p>
+      </div>
       <div class="feature-card fade-in">
         <div class="feature-icon">🔒</div>
         <h3>Provably Fair</h3>
-        <p>All Stake Originals use provably fair technology — you can verify every result yourself.</p>
+        <p>All Stake Originals use provably fair technology — verify every result yourself.</p>
       </div>
       <div class="feature-card fade-in">
         <div class="feature-icon">🌍</div>
         <h3>Global Access</h3>
-        <p>Available in most countries. No KYC required for crypto play. VPN-friendly platform.</p>
+        <p>Available in most countries. No KYC required for crypto play.</p>
       </div>
       <div class="feature-card fade-in">
         <div class="feature-icon">📱</div>
         <h3>Mobile Optimized</h3>
-        <p>Full mobile experience without any app download. Works perfectly on all devices.</p>
+        <p>Full mobile experience without any app download. Works on all devices.</p>
       </div>
     </div>
 
     <!-- Pros & Cons -->
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
-      <div class="feature-card fade-in" style="border-color: rgba(0, 231, 1, 0.3);">
+      <div class="feature-card fade-in" style="border-color: rgba(0,231,1,0.3);">
         <h3 style="color: var(--accent); margin-bottom: 1rem;">✅ Pros</h3>
         <ul style="list-style: none; color: var(--text-secondary);">
           <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">Huge game selection (3,000+)</li>
@@ -272,7 +400,7 @@
           <li style="padding: 0.5rem 0;">Active community & chat</li>
         </ul>
       </div>
-      <div class="feature-card fade-in" style="border-color: rgba(239, 68, 68, 0.3);">
+      <div class="feature-card fade-in" style="border-color: rgba(239,68,68,0.3);">
         <h3 style="color: #ef4444; margin-bottom: 1rem;">❌ Cons</h3>
         <ul style="list-style: none; color: var(--text-secondary);">
           <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">No traditional fiat deposits</li>
@@ -285,390 +413,159 @@
       </div>
     </div>
 
-    <!-- Rating Breakdown -->
+    <!-- Inline CTA -->
+    <div class="inline-cta">
+      <p>🎁 <strong style="color: var(--text-primary);">Ready to claim your bonus?</strong> Sign up through our link and get the best available welcome offer.</p>
+      <a href="https://stake.bet/?c=Playgood" class="inline-cta-btn" target="_blank" rel="nofollow noopener">Get Your Bonus →</a>
+    </div>
+
+    <!-- Rating -->
     <div class="feature-card fade-in" style="margin-top: 2rem; text-align: center;">
       <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Overall Rating: <span style="color: var(--accent); font-size: 2rem;">4.7 / 5</span></h3>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; text-align: left;">
         <div>
-          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
-            <span style="color: var(--text-secondary);">Game Selection</span>
-            <span style="color: var(--accent);">9.5/10</span>
-          </div>
-          <div style="background: var(--border); border-radius: 10px; height: 8px;">
-            <div style="background: var(--gradient-1); width: 95%; height: 100%; border-radius: 10px;"></div>
-          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;"><span style="color: var(--text-secondary);">Game Selection</span><span style="color: var(--accent);">9.5/10</span></div>
+          <div style="background: var(--border); border-radius: 10px; height: 8px;"><div style="background: var(--gradient-1); width: 95%; height: 100%; border-radius: 10px;"></div></div>
         </div>
         <div>
-          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
-            <span style="color: var(--text-secondary);">Bonuses</span>
-            <span style="color: var(--accent);">9/10</span>
-          </div>
-          <div style="background: var(--border); border-radius: 10px; height: 8px;">
-            <div style="background: var(--gradient-1); width: 90%; height: 100%; border-radius: 10px;"></div>
-          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;"><span style="color: var(--text-secondary);">Bonuses</span><span style="color: var(--accent);">9/10</span></div>
+          <div style="background: var(--border); border-radius: 10px; height: 8px;"><div style="background: var(--gradient-1); width: 90%; height: 100%; border-radius: 10px;"></div></div>
         </div>
         <div>
-          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
-            <span style="color: var(--text-secondary);">Withdrawals</span>
-            <span style="color: var(--accent);">9.5/10</span>
-          </div>
-          <div style="background: var(--border); border-radius: 10px; height: 8px;">
-            <div style="background: var(--gradient-1); width: 95%; height: 100%; border-radius: 10px;"></div>
-          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;"><span style="color: var(--text-secondary);">Withdrawals</span><span style="color: var(--accent);">9.5/10</span></div>
+          <div style="background: var(--border); border-radius: 10px; height: 8px;"><div style="background: var(--gradient-1); width: 95%; height: 100%; border-radius: 10px;"></div></div>
         </div>
         <div>
-          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
-            <span style="color: var(--text-secondary);">Security</span>
-            <span style="color: var(--accent);">9/10</span>
-          </div>
-          <div style="background: var(--border); border-radius: 10px; height: 8px;">
-            <div style="background: var(--gradient-1); width: 90%; height: 100%; border-radius: 10px;"></div>
-          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;"><span style="color: var(--text-secondary);">Security</span><span style="color: var(--accent);">9/10</span></div>
+          <div style="background: var(--border); border-radius: 10px; height: 8px;"><div style="background: var(--gradient-1); width: 90%; height: 100%; border-radius: 10px;"></div></div>
         </div>
         <div>
-          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
-            <span style="color: var(--text-secondary);">Mobile Experience</span>
-            <span style="color: var(--accent);">8.5/10</span>
-          </div>
-          <div style="background: var(--border); border-radius: 10px; height: 8px;">
-            <div style="background: var(--gradient-1); width: 85%; height: 100%; border-radius: 10px;"></div>
-          </div>
-        </div>
-        <div>
-          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
-            <span style="color: var(--text-secondary);">Customer Support</span>
-            <span style="color: var(--accent);">8/10</span>
-          </div>
-          <div style="background: var(--border); border-radius: 10px; height: 8px;">
-            <div style="background: var(--gradient-1); width: 80%; height: 100%; border-radius: 10px;"></div>
-          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;"><span style="color: var(--text-secondary);">Mobile Experience</span><span style="color: var(--accent);">8.5/10</span></div>
+          <div style="background: var(--border); border-radius: 10px; height: 8px;"><div style="background: var(--gradient-1); width: 85%; height: 100%; border-radius: 10px;"></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Games Section -->
+  <!-- Games -->
   <section id="games" class="features">
     <div class="section-container">
       <div class="section-header fade-in">
         <h2>Stake Casino <span class="highlight">Games</span></h2>
-        <p>Over 3,000 games from top providers plus exclusive Stake Originals you won't find anywhere else.</p>
+        <p>Over 3,000 games from top providers plus exclusive Stake Originals.</p>
       </div>
-
       <div class="games-grid">
-        <div class="game-card fade-in">
+        <a href="https://stake.bet/?c=Playgood" class="game-card fade-in" target="_blank" rel="nofollow noopener">
           <div class="game-card-image">🎰</div>
-          <div class="game-card-content">
-            <h3>Slots</h3>
-            <p>2,500+ slots from Pragmatic Play, NetEnt, Hacksaw Gaming, Nolimit City, Push Gaming and more.</p>
-            <span class="game-tag">2,500+ Titles</span>
-          </div>
-        </div>
-        <div class="game-card fade-in">
-          <div class="game-card-image">🃏</div>
-          <div class="game-card-content">
-            <h3>Table Games</h3>
-            <p>Blackjack, Roulette, Baccarat, Poker and more — multiple variants of each.</p>
-            <span class="game-tag">100+ Variants</span>
-          </div>
-        </div>
-        <div class="game-card fade-in">
-          <div class="game-card-image">🎲</div>
-          <div class="game-card-content">
-            <h3>Live Casino</h3>
-            <p>Real dealers, real tables. Evolution & Pragmatic Live with VIP rooms.</p>
-            <span class="game-tag">Live Dealers</span>
-          </div>
-        </div>
-        <div class="game-card fade-in">
-          <div class="game-card-image">💎</div>
-          <div class="game-card-content">
-            <h3>Stake Originals</h3>
-            <p>Crash, Dice, Mines, Plinko, Limbo, Towers — exclusive provably fair games.</p>
-            <span class="game-tag">Exclusive</span>
-          </div>
-        </div>
-        <div class="game-card fade-in">
-          <div class="game-card-image">🏆</div>
-          <div class="game-card-content">
-            <h3>Sports Betting</h3>
-            <p>Bet on football, basketball, tennis, esports, and 30+ sports markets.</p>
-            <span class="game-tag">30+ Sports</span>
-          </div>
-        </div>
-        <div class="game-card fade-in">
-          <div class="game-card-image">🎯</div>
-          <div class="game-card-content">
-            <h3>Game Shows</h3>
-            <p>Crazy Time, Monopoly Live, Deal or No Deal, Lightning Roulette and more.</p>
-            <span class="game-tag">Interactive</span>
-          </div>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 2rem;">
-        <a href="https://stake.bet/?c=Playgood" class="btn-primary" rel="nofollow noopener" target="_blank">
-          🎰 Explore All Games
+          <div class="game-card-content"><h3>Slots</h3><p>2,500+ slots from Pragmatic, NetEnt, Hacksaw, Nolimit City.</p><span class="game-tag">2,500+ Titles</span></div>
         </a>
+        <a href="https://stake.bet/?c=Playgood" class="game-card fade-in" target="_blank" rel="nofollow noopener">
+          <div class="game-card-image">🃏</div>
+          <div class="game-card-content"><h3>Table Games</h3><p>Blackjack, Roulette, Baccarat, Poker and more.</p><span class="game-tag">100+ Variants</span></div>
+        </a>
+        <a href="https://stake.bet/?c=Playgood" class="game-card fade-in" target="_blank" rel="nofollow noopener">
+          <div class="game-card-image">💎</div>
+          <div class="game-card-content"><h3>Stake Originals</h3><p>Crash, Dice, Mines, Plinko — exclusive provably fair games.</p><span class="game-tag">Exclusive</span></div>
+        </a>
+        <a href="https://stake.bet/?c=Playgood" class="game-card fade-in" target="_blank" rel="nofollow noopener">
+          <div class="game-card-image">🏆</div>
+          <div class="game-card-content"><h3>Sports Betting</h3><p>Bet on 30+ sports including football, basketball, tennis.</p><span class="game-tag">30+ Sports</span></div>
+        </a>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="https://stake.bet/?c=Playgood" class="btn-primary" rel="nofollow noopener" target="_blank">🎰 Explore All Games</a>
       </div>
     </div>
   </section>
 
-  <!-- Bonus Section -->
+  <!-- Bonus -->
   <section id="bonus" class="bonus-section">
     <div class="section-container">
       <div class="section-header fade-in">
         <h2>Stake Casino <span class="highlight">Bonus</span></h2>
-        <p>Claim your exclusive welcome offer and unlock ongoing rewards at Stake.bet</p>
+        <p>Compare the best crypto casino bonuses side by side</p>
       </div>
-
-      <div class="bonus-card fade-in">
-        <h3>🎁 Welcome Bonus</h3>
-        <div class="bonus-amount">Up to $1,000+</div>
-        <p>New players can claim an exclusive welcome bonus plus ongoing rewards including rakeback, weekly bonuses, and VIP perks.</p>
-
-        <div class="bonus-features">
-          <div class="bonus-feature"><span class="check">✓</span> Welcome Bonus</div>
-          <div class="bonus-feature"><span class="check">✓</span> Rakeback Rewards</div>
-          <div class="bonus-feature"><span class="check">✓</span> Weekly Reload Bonus</div>
-          <div class="bonus-feature"><span class="check">✓</span> VIP Program</div>
-          <div class="bonus-feature"><span class="check">✓</span> Free Spins Offers</div>
-          <div class="bonus-feature"><span class="check">✓</span> Seasonal Promotions</div>
+      <div class="comparison-cta">
+        <div class="comparison-cta-card">
+          <h3>🎰 Stake Casino</h3>
+          <div class="bonus">Up to $1,000+</div>
+          <p>Rakeback + VIP Rewards</p>
+          <a href="https://stake.bet/?c=Playgood" class="comparison-cta-btn" target="_blank" rel="nofollow noopener">Claim Stake Bonus</a>
         </div>
-
-        <a href="https://stake.bet/?c=Playgood" class="btn-primary" rel="nofollow noopener" target="_blank" style="font-size: 1.2rem; padding: 1.2rem 3rem;">
-          🎰 Claim Your Bonus Now
-        </a>
+        <div class="comparison-cta-card">
+          <h3>🎁 BC.Game</h3>
+          <div class="bonus">Up to 180%</div>
+          <p>Daily Spin Wheel + BC Tokens</p>
+          <a href="https://landingbc.com/bcfreespin/en?i=5rdwr628" class="comparison-cta-btn" target="_blank" rel="nofollow noopener">Claim BC.Game Bonus</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Payments Section -->
+  <!-- Payments -->
   <section id="payments" class="section-container">
     <div class="section-header fade-in">
       <h2>Payment <span class="highlight">Methods</span></h2>
-      <p>Stake Casino supports 15+ cryptocurrencies with instant deposits and lightning-fast withdrawals.</p>
+      <p>Stake Casino supports 15+ cryptocurrencies with instant withdrawals.</p>
     </div>
-
     <div class="payments-grid">
-      <div class="payment-method fade-in">
-        <div class="payment-icon">₿</div>
-        <div class="payment-name">Bitcoin</div>
-        <div class="payment-type">BTC</div>
-      </div>
-      <div class="payment-method fade-in">
-        <div class="payment-icon">Ξ</div>
-        <div class="payment-name">Ethereum</div>
-        <div class="payment-type">ETH</div>
-      </div>
-      <div class="payment-method fade-in">
-        <div class="payment-icon">Ł</div>
-        <div class="payment-name">Litecoin</div>
-        <div class="payment-type">LTC</div>
-      </div>
-      <div class="payment-method fade-in">
-        <div class="payment-icon">₮</div>
-        <div class="payment-name">Tether</div>
-        <div class="payment-type">USDT</div>
-      </div>
-      <div class="payment-method fade-in">
-        <div class="payment-icon">✕</div>
-        <div class="payment-name">Ripple</div>
-        <div class="payment-type">XRP</div>
-      </div>
-      <div class="payment-method fade-in">
-        <div class="payment-icon">Ð</div>
-        <div class="payment-name">Dogecoin</div>
-        <div class="payment-type">DOGE</div>
-      </div>
-      <div class="payment-method fade-in">
-        <div class="payment-icon">◎</div>
-        <div class="payment-name">Solana</div>
-        <div class="payment-type">SOL</div>
-      </div>
-      <div class="payment-method fade-in">
-        <div class="payment-icon">₳</div>
-        <div class="payment-name">Cardano</div>
-        <div class="payment-type">ADA</div>
-      </div>
-    </div>
-
-    <div class="feature-card fade-in" style="margin-top: 2rem;">
-      <h3 style="margin-bottom: 1rem;">⚡ Withdrawal Speed</h3>
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th>Cryptocurrency</th>
-            <th>Min. Withdrawal</th>
-            <th>Processing Time</th>
-            <th>Fees</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Bitcoin (BTC)</td>
-            <td>0.0001 BTC</td>
-            <td>~10 minutes</td>
-            <td><span class="check">Free</span></td>
-          </tr>
-          <tr>
-            <td>Ethereum (ETH)</td>
-            <td>0.005 ETH</td>
-            <td>~5 minutes</td>
-            <td><span class="check">Free</span></td>
-          </tr>
-          <tr>
-            <td>Litecoin (LTC)</td>
-            <td>0.01 LTC</td>
-            <td>~3 minutes</td>
-            <td><span class="check">Free</span></td>
-          </tr>
-          <tr>
-            <td>USDT (ERC-20)</td>
-            <td>10 USDT</td>
-            <td>~5 minutes</td>
-            <td><span class="check">Free</span></td>
-          </tr>
-          <tr>
-            <td>Dogecoin (DOGE)</td>
-            <td>10 DOGE</td>
-            <td>~3 minutes</td>
-            <td><span class="check">Free</span></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="payment-method fade-in"><div class="payment-icon">₿</div><div class="payment-name">Bitcoin</div><div class="payment-type">BTC</div></div>
+      <div class="payment-method fade-in"><div class="payment-icon">Ξ</div><div class="payment-name">Ethereum</div><div class="payment-type">ETH</div></div>
+      <div class="payment-method fade-in"><div class="payment-icon">Ł</div><div class="payment-name">Litecoin</div><div class="payment-type">LTC</div></div>
+      <div class="payment-method fade-in"><div class="payment-icon">₮</div><div class="payment-name">Tether</div><div class="payment-type">USDT</div></div>
+      <div class="payment-method fade-in"><div class="payment-icon">◎</div><div class="payment-name">Solana</div><div class="payment-type">SOL</div></div>
+      <div class="payment-method fade-in"><div class="payment-icon">Ð</div><div class="payment-name">Dogecoin</div><div class="payment-type">DOGE</div></div>
     </div>
   </section>
 
-  <!-- User Reviews -->
+  <!-- Reviews -->
   <section class="features">
     <div class="section-container">
       <div class="section-header fade-in">
         <h2>What <span class="highlight">Players Say</span></h2>
-        <p>Real reviews from the Stake Casino community</p>
       </div>
-
       <div class="review-grid">
         <div class="review-card fade-in">
           <div class="review-stars">⭐⭐⭐⭐⭐</div>
           <h3>Best Crypto Casino, Period</h3>
-          <p>"I've tried dozens of crypto casinos and Stake is hands down the best. The game selection is insane, withdrawals are instant, and the VIP program actually rewards you. Been playing here for 2 years now."</p>
-          <div class="review-author">
-            <div class="review-avatar">MK</div>
-            <div>
-              <div class="review-name">Mike K.</div>
-              <div class="review-date">Verified Player</div>
-            </div>
-          </div>
+          <p>"I've tried dozens of crypto casinos and Stake is hands down the best. The game selection is insane, withdrawals are instant."</p>
         </div>
         <div class="review-card fade-in">
           <div class="review-stars">⭐⭐⭐⭐⭐</div>
           <h3>Love the Originals</h3>
-          <p>"Stake Originals like Crash and Mines are so addictive. I love that they're provably fair — I can actually verify every bet. The community chat is also really fun and active."</p>
-          <div class="review-author">
-            <div class="review-avatar">SJ</div>
-            <div>
-              <div class="review-name">Sarah J.</div>
-              <div class="review-date">Verified Player</div>
-            </div>
-          </div>
+          <p>"Stake Originals like Crash and Mines are so addictive. I love that they're provably fair."</p>
         </div>
         <div class="review-card fade-in">
           <div class="review-stars">⭐⭐⭐⭐</div>
           <h3>Fast Withdrawals, Great UX</h3>
-          <p>"Withdrew Bitcoin in under 5 minutes. The site is clean, fast, and works perfectly on mobile. Only wish they had a dedicated app, but the browser experience is solid."</p>
-          <div class="review-author">
-            <div class="review-avatar">DR</div>
-            <div>
-              <div class="review-name">David R.</div>
-              <div class="review-date">Verified Player</div>
-            </div>
-          </div>
+          <p>"Withdrew Bitcoin in under 5 minutes. The site is clean, fast, and works perfectly on mobile."</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ Section -->
+  <!-- FAQ -->
   <section id="faq" class="faq-section">
     <div class="section-container">
       <div class="section-header fade-in">
         <h2>Frequently Asked <span class="highlight">Questions</span></h2>
-        <p>Everything you need to know about Stake Casino</p>
       </div>
-
       <div class="faq-list">
         <div class="faq-item fade-in">
-          <div class="faq-question">
-            Is Stake Casino legit and safe?
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>Yes, Stake Casino is a legitimate online casino operating under a Curaçao gaming license. It uses provably fair technology for its original games, meaning every result can be independently verified. The platform has been operating since 2017 and has built a strong reputation in the crypto gambling community.</p>
-          </div>
+          <div class="faq-question">Is Stake Casino legit and safe?<span class="faq-toggle">+</span></div>
+          <div class="faq-answer"><p>Yes, Stake Casino is a legitimate online casino operating under a Curaçao gaming license since 2017. It uses provably fair technology and has processed millions in withdrawals.</p></div>
         </div>
         <div class="faq-item fade-in">
-          <div class="faq-question">
-            How do I deposit at Stake Casino?
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>Stake Casino is a crypto-only casino. To deposit, create an account, go to the wallet section, select your preferred cryptocurrency, and send funds to the provided address. You can also buy crypto directly on the platform using MoonPay or other supported providers.</p>
-          </div>
+          <div class="faq-question">How fast are withdrawals at Stake?<span class="faq-toggle">+</span></div>
+          <div class="faq-answer"><p>Most crypto withdrawals are completed within 1-10 minutes. No manual processing delays for most transactions.</p></div>
         </div>
         <div class="faq-item fade-in">
-          <div class="faq-question">
-            How fast are withdrawals at Stake?
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>Withdrawals at Stake are processed almost instantly. Most crypto withdrawals are completed within 1-10 minutes, depending on the cryptocurrency and network congestion. There are no manual processing delays for most transactions.</p>
-          </div>
+          <div class="faq-question">What is the minimum deposit?<span class="faq-toggle">+</span></div>
+          <div class="faq-answer"><p>The minimum deposit varies by cryptocurrency but is generally very low — often equivalent to just a few dollars.</p></div>
         </div>
         <div class="faq-item fade-in">
-          <div class="faq-question">
-            What is the minimum deposit at Stake Casino?
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>The minimum deposit varies by cryptocurrency but is generally very low — often equivalent to just a few dollars. This makes Stake accessible to players of all bankroll sizes. Check the wallet section for specific minimums per currency.</p>
-          </div>
-        </div>
-        <div class="faq-item fade-in">
-          <div class="faq-question">
-            Does Stake Casino have a VIP program?
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>Yes, Stake has an excellent VIP program with multiple tiers. Benefits include rakeback, weekly bonuses, dedicated VIP hosts, exclusive promotions, and even physical gifts for top-tier members. The more you play, the better the rewards.</p>
-          </div>
-        </div>
-        <div class="faq-item fade-in">
-          <div class="faq-question">
-            Can I play Stake Casino on my phone?
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>Absolutely! Stake Casino is fully optimized for mobile browsers. You don't need to download any app — just visit stake.bet from your phone's browser and you'll have access to all games, features, and your full account.</p>
-          </div>
-        </div>
-        <div class="faq-item fade-in">
-          <div class="faq-question">
-            What are Stake Originals?
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>Stake Originals are exclusive in-house games developed by Stake, including Crash, Dice, Mines, Plinko, Limbo, and Towers. All Stake Originals are provably fair, meaning you can verify the fairness of every game result using cryptographic hash functions.</p>
-          </div>
-        </div>
-        <div class="faq-item fade-in">
-          <div class="faq-question">
-            Is KYC required at Stake Casino?
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>For most crypto-only play, Stake does not require KYC verification. However, in certain circumstances (large withdrawals, suspicious activity, or regulatory requirements), Stake may request identity verification. This is standard practice for licensed casinos.</p>
-          </div>
+          <div class="faq-question">Can I play Stake Casino on my phone?<span class="faq-toggle">+</span></div>
+          <div class="faq-answer"><p>Absolutely! Stake Casino is fully optimized for mobile browsers. No app download needed.</p></div>
         </div>
       </div>
     </div>
@@ -678,10 +575,11 @@
   <section class="cta-section">
     <div class="cta-content fade-in">
       <h2>Ready to <span class="highlight">Get Started?</span></h2>
-      <p>Join millions of players at Stake Casino. Claim your bonus, explore 3000+ games, and experience the best in crypto gambling today.</p>
-      <a href="https://stake.bet/?c=Playgood" class="btn-primary" rel="nofollow noopener" target="_blank" style="font-size: 1.2rem; padding: 1.2rem 3rem;">
-        🎰 Play at Stake Casino Now
-      </a>
+      <p>Join millions of players at Stake Casino. Claim your bonus, explore 3000+ games, and experience the best in crypto gambling.</p>
+      <a href="https://stake.bet/?c=Playgood" class="btn-primary" rel="nofollow noopener" target="_blank" style="font-size: 1.2rem; padding: 1.2rem 3rem;">🎰 Play at Stake Casino Now</a>
+      <div style="margin-top: 2rem;">
+        <a href="bc-game-review.html" style="color: var(--accent); text-decoration: underline;">Or check BC.Game for a bigger welcome bonus →</a>
+      </div>
     </div>
   </section>
 
@@ -690,7 +588,7 @@
     <div class="footer-container">
       <div class="footer-col">
         <h4>Stake Casino Review</h4>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">Honest, independent review of Stake.bet — the world's leading crypto casino. We provide unbiased information to help you make informed decisions.</p>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Honest, independent review of Stake.bet — the world's leading crypto casino.</p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
@@ -698,6 +596,7 @@
           <li><a href="#review">Full Review</a></li>
           <li><a href="bc-game-review.html">BC.Game Review</a></li>
           <li><a href="blog/stake-vs-bc-game.html">Stake vs BC.Game</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="#games">Games</a></li>
           <li><a href="#bonus">Bonus</a></li>
           <li><a href="#payments">Payments</a></li>
@@ -705,32 +604,62 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Games</h4>
+        <h4>Casinos</h4>
         <ul>
-          <li><a href="https://stake.bet/?c=Playgood" rel="nofollow noopener" target="_blank">Slots</a></li>
-          <li><a href="https://stake.bet/?c=Playgood" rel="nofollow noopener" target="_blank">Live Casino</a></li>
-          <li><a href="https://stake.bet/?c=Playgood" rel="nofollow noopener" target="_blank">Stake Originals</a></li>
-          <li><a href="https://stake.bet/?c=Playgood" rel="nofollow noopener" target="_blank">Sports Betting</a></li>
+          <li><a href="https://stake.bet/?c=Playgood" rel="nofollow noopener" target="_blank">Stake Casino</a></li>
+          <li><a href="https://landingbc.com/bcfreespin/en?i=5rdwr628" rel="nofollow noopener" target="_blank">BC.Game</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Resources</h4>
+        <h4>Blog</h4>
         <ul>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="https://stake.bet/?c=Playgood" rel="nofollow noopener" target="_blank">VIP Program</a></li>
-          <li><a href="https://stake.bet/?c=Playgood" rel="nofollow noopener" target="_blank">Provably Fair</a></li>
+          <li><a href="blog/best-crypto-casinos-2026.html">Best Crypto Casinos</a></li>
+          <li><a href="blog/how-to-play-crash-stake.html">How to Play Crash</a></li>
+          <li><a href="blog/best-slots-stake-casino.html">Best Slots on Stake</a></li>
+          <li><a href="blog/best-casino-bonuses-2026.html">Best Bonuses</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p>© 2026 StakeReview. All rights reserved. This site contains affiliate links.</p>
-      <div class="disclaimer">
-        <strong>⚠️ Gambling Disclaimer:</strong> Gambling involves risk. Please gamble responsibly and only bet what you can afford to lose. You must be of legal gambling age in your jurisdiction. If you or someone you know has a gambling problem, please contact a local support organization. This website contains affiliate links — we may earn a commission when you sign up through our links at no extra cost to you.
-      </div>
+      <div class="disclaimer"><strong>⚠️ Gambling Disclaimer:</strong> Gambling involves risk. Please gamble responsibly. You must be of legal gambling age in your jurisdiction.</div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Sticky CTA - show after scrolling 500px
+    window.addEventListener('scroll', function() {
+      var sticky = document.getElementById('stickyCta');
+      if (window.scrollY > 500) {
+        sticky.style.bottom = '0';
+      }
+    });
+
+    // Exit Intent Popup
+    var exitPopupShown = false;
+    document.addEventListener('mouseout', function(e) {
+      if (!exitPopupShown && e.clientY < 10) {
+        document.getElementById('exitPopup').classList.add('active');
+        exitPopupShown = true;
+      }
+    });
+    function closeExitPopup() {
+      document.getElementById('exitPopup').classList.remove('active');
+    }
+
+    // Countdown Timer
+    function updateCountdown() {
+      var el = document.getElementById('countdown');
+      if (!el) return;
+      var parts = el.textContent.split(':');
+      var h = parseInt(parts[0]), m = parseInt(parts[1]), s = parseInt(parts[2]);
+      var total = h * 3600 + m * 60 + s - 1;
+      if (total < 0) total = 7200 + Math.floor(Math.random() * 7200);
+      var nh = Math.floor(total / 3600), nm = Math.floor((total % 3600) / 60), ns = total % 60;
+      el.textContent = String(nh).padStart(2,'0') + ':' + String(nm).padStart(2,'0') + ':' + String(ns).padStart(2,'0');
+    }
+    setInterval(updateCountdown, 1000);
+  </script>
 </body>
 </html>
-<!-- Last updated: 13 Jun 2026 21:42:54 -->
